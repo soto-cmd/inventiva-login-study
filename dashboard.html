@@ -3,114 +3,88 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sistema Inventiva - Demo</title>
+  <title>Sistema Inventiva - Inicio (estudio)</title>
   <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
   <header class="topbar">
     <button class="menu-button" id="menu-button" aria-label="Abrir o cerrar menú">☰</button>
-    <div class="brand">
-      <div class="brand-mark">i</div>
-      <div>
-        <strong>Sistema Inventiva</strong>
-        <span>Réplica educativa</span>
-      </div>
-    </div>
-    <div class="top-actions">
-      <span class="user-label" id="user-label">Usuario</span>
-      <button class="logout" id="logout-button">Salir</button>
-    </div>
+    <div class="top-item star">★ <strong>Ejercicio:</strong>&nbsp; 01/05/2026 AL 30/04/2027</div>
+    <div class="top-item">⌯ <strong>Empresa:</strong>&nbsp; HIBERNIA MISIONES S.A.</div>
+    <div class="top-item">⌯ <strong>Sucursal:</strong>&nbsp; SANTA MARIA</div>
+    <div class="top-user">♙ <span id="user-label">Usuario</span>⌄</div>
   </header>
 
   <aside class="sidebar" id="sidebar">
-    <nav>
-      <a class="active" href="#inicio">⌂ <span>Inicio</span></a>
-      <a href="#ventas">▣ <span>Ventas</span></a>
-      <a href="#compras">▤ <span>Compras</span></a>
-      <a href="#inventario">▦ <span>Inventario</span></a>
-      <a href="#clientes">♙ <span>Clientes</span></a>
-      <a href="#proveedores">♢ <span>Proveedores</span></a>
-      <a href="#reportes">▥ <span>Reportes</span></a>
-      <a href="#configuracion">⚙ <span>Configuración</span></a>
+    <nav aria-label="Módulos principales">
+      <a href="#finanzas" title="Finanzas"><span class="nav-icon">$</span><span class="nav-text">Finanzas</span></a>
+      <a href="#ventas" title="Ventas"><span class="nav-icon">🛒</span><span class="nav-text">Ventas</span></a>
+      <a href="#modulo1" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
+      <a href="#modulo2" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
+      <a href="#modulo3" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
+      <a href="#modulo4" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
+      <a href="#modulo5" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
+      <a href="#modulo6" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
     </nav>
   </aside>
 
   <main class="content" id="main-content">
-    <section class="page-heading">
-      <div>
-        <p class="eyebrow">Sistema</p>
-        <h1>Inicio</h1>
-        <p>Panel de práctica inspirado en una aplicación empresarial Oracle APEX.</p>
-      </div>
-      <button class="primary-button">+ Nuevo registro</button>
+    <section class="quick-strip" aria-label="Accesos superiores">
+      <div class="quick-placeholder"></div><div class="quick-placeholder"></div><div class="quick-placeholder"></div><div class="quick-placeholder"></div>
     </section>
 
-    <section class="cards">
-      <article class="metric-card">
-        <span class="metric-label">Pedidos pendientes</span>
-        <strong>12</strong>
-        <small>Datos de demostración</small>
-      </article>
-      <article class="metric-card">
-        <span class="metric-label">Productos activos</span>
-        <strong>248</strong>
-        <small>Datos de demostración</small>
-      </article>
-      <article class="metric-card">
-        <span class="metric-label">Clientes</span>
-        <strong>76</strong>
-        <small>Datos de demostración</small>
-      </article>
-      <article class="metric-card">
-        <span class="metric-label">Alertas</span>
-        <strong>3</strong>
-        <small>Datos de demostración</small>
-      </article>
-    </section>
+    <section class="home-grid">
+      <article class="apex-panel exchange-panel">
+        <header class="panel-title"><span>▣</span> Cambios</header>
+        <div class="panel-body exchange-grid">
+          <section class="currency-card">
+            <div class="currency-head"><span class="flag">🇦🇷</span><strong>PESO<br>ARGENTINO</strong></div>
+            <p><b>Compra:</b> 4,2<br><b>Venta:</b> 4,6</p>
+            <p class="date">11/05/2026</p>
+            <button>Ver</button>
+            <a href="#">VALORES SET:</a>
+            <p><b>Compra:</b> 8,52<br><b>Venta:</b> 8,54</p>
+            <p class="date">15/04/2024</p>
+            <button>Ver</button>
+          </section>
 
-    <section class="panel-grid">
-      <article class="panel">
-        <div class="panel-header">
-          <div>
-            <h2>Últimos movimientos</h2>
-            <p>Ejemplo de tabla tipo sistema administrativo.</p>
+          <section class="currency-card">
+            <div class="currency-head"><span class="flag">🇺🇸</span><strong>DOLARES</strong></div>
+            <p><b>Compra:</b> 6100<br><b>Venta:</b> 6180</p>
+            <p class="date">11/05/2026</p>
+            <button>Ver</button>
+            <a href="#">VALORES SET:</a>
+            <p><b>Compra:</b> 7397,33<br><b>Venta:</b> 7412,35</p>
+            <p class="date">15/04/2024</p>
+            <button>Ver</button>
+          </section>
+        </div>
+      </article>
+
+      <article class="apex-panel calendar-panel">
+        <header class="panel-title">Calendario</header>
+        <div class="panel-body">
+          <div class="calendar-toolbar">
+            <div class="calendar-buttons"><button>‹</button><button>›</button><button class="today">Hoy</button></div>
+            <div class="month-title">septiembre<br>de 2026</div>
+            <div class="view-buttons"><button>Mes</button><button>Agenda</button></div>
           </div>
-          <button class="ghost-button">Ver todos</button>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Fecha</th><th>Documento</th><th>Descripción</th><th>Estado</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>23/09/2026</td><td>MV-1042</td><td>Entrada de mercadería</td><td><span class="status ok">Procesado</span></td></tr>
-              <tr><td>23/09/2026</td><td>PV-2188</td><td>Pedido de venta</td><td><span class="status pending">Pendiente</span></td></tr>
-              <tr><td>22/09/2026</td><td>AJ-0093</td><td>Ajuste de inventario</td><td><span class="status ok">Procesado</span></td></tr>
-              <tr><td>22/09/2026</td><td>OC-0521</td><td>Orden de compra</td><td><span class="status review">Revisión</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
-
-      <article class="panel shortcuts">
-        <div class="panel-header">
-          <div>
-            <h2>Accesos rápidos</h2>
-            <p>Módulos de ejemplo.</p>
+          <div class="calendar-grid">
+            <div class="dow">lun</div><div class="dow">mar</div><div class="dow">mié</div><div class="dow">jue</div><div class="dow">vie</div><div class="dow">sáb</div><div class="dow">dom</div>
+            <div class="muted">31</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+            <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+            <div>21</div><div>22</div><div class="event-day">23<span class="calendar-event">Auditoría China</span></div><div>24</div><div>25</div><div>26</div><div>27</div>
+            <div>28</div><div>29</div><div>30</div><div class="muted">1</div><div class="muted">2</div><div class="muted">3</div><div class="muted">4</div>
           </div>
         </div>
-        <div class="shortcut-grid">
-          <button>▦<span>Inventario</span></button>
-          <button>▣<span>Ventas</span></button>
-          <button>▤<span>Compras</span></button>
-          <button>▥<span>Reportes</span></button>
-        </div>
       </article>
     </section>
 
-    <p class="study-note">Esta pantalla no pertenece al sistema real de Inventiva. Es una recreación educativa para estudiar estructura, navegación y diseño.</p>
+    <p class="study-note">Réplica educativa basada únicamente en elementos visibles de la interfaz. No está conectada al sistema real ni a sus datos.</p>
   </main>
 
+  <button class="logout-fab" id="logout-button" title="Cerrar sesión de demostración">Salir</button>
   <script src="dashboard.js"></script>
 </body>
 </html>
