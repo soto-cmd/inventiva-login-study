@@ -3,88 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sistema Inventiva - Inicio (estudio)</title>
+  <title>Sistema Inventiva - Demo</title>
   <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
   <header class="topbar">
     <button class="menu-button" id="menu-button" aria-label="Abrir o cerrar menú">☰</button>
-    <div class="top-item star">★ <strong>Ejercicio:</strong>&nbsp; 01/05/2026 AL 30/04/2027</div>
-    <div class="top-item">⌯ <strong>Empresa:</strong>&nbsp; HIBERNIA MISIONES S.A.</div>
-    <div class="top-item">⌯ <strong>Sucursal:</strong>&nbsp; SANTA MARIA</div>
-    <div class="top-user">♙ <span id="user-label">Usuario</span>⌄</div>
+    <div class="brand">
+      <div class="brand-logo">HIBERNIA</div>
+      <strong>Sistema Inventiva</strong>
+    </div>
+    <div class="top-meta">
+      <span>★&nbsp; Ejercicio: 01/05/2026 AL 30/04/2027</span>
+      <span>✂&nbsp; Empresa: HIBERNIA MISIONES S.A.</span>
+      <span>✂&nbsp; Sucursal: SANTA MARIA</span>
+      <span>♙&nbsp; asoto⌄</span>
+    </div>
   </header>
 
   <aside class="sidebar" id="sidebar">
-    <nav aria-label="Módulos principales">
-      <a href="#finanzas" title="Finanzas"><span class="nav-icon">$</span><span class="nav-text">Finanzas</span></a>
-      <a href="#ventas" title="Ventas"><span class="nav-icon">🛒</span><span class="nav-text">Ventas</span></a>
-      <a href="#modulo1" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
-      <a href="#modulo2" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
-      <a href="#modulo3" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
-      <a href="#modulo4" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
-      <a href="#modulo5" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
-      <a href="#modulo6" title="Módulo"><span class="nav-icon">◉</span><span class="nav-text">Módulo</span></a>
+    <nav class="icon-nav">
+      <a href="#" title="Cuentas a Cobrar">$</a>
+      <a href="#" title="Compras">🛒</a>
+      <a href="#" title="Liquidación Cañas">⚙</a>
+      <a href="#" title="Laboratorio">⚙</a>
+      <a href="#" title="Servicios de Mantenimiento">⚙</a>
+      <a href="#" title="Gestión de Calidad">⚙</a>
+      <a href="#" title="Laboratorio - Proceso">⚙</a>
+      <a href="#" title="Laboratorio - Control de PCCs">⚙</a>
+      <a href="#" title="Laboratorio - Azúcar">⚙</a>
+      <a href="#" title="Laboratorio - Microbiología">⚙</a>
+    </nav>
+    <nav class="expanded-nav" id="expanded-nav">
+      <a href="#"><span>$</span><b>Cuentas a Cobrar</b><i>›</i></a>
+      <a href="#"><span>🛒</span><b>Compras<br>Locales/Importación</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Liquidación Cañas</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Laboratorio</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Servicios de<br>Mantenimiento</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Gestion de Calidad</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Laboratorio - Proceso</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Laboratorio - Control de<br>PCCs</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Laboratorio - Azúcar</b><i>›</i></a>
+      <a href="#"><span>⚙</span><b>Laboratorio -<br>Microbiología</b><i>›</i></a>
     </nav>
   </aside>
 
   <main class="content" id="main-content">
-    <section class="quick-strip" aria-label="Accesos superiores">
-      <div class="quick-placeholder"></div><div class="quick-placeholder"></div><div class="quick-placeholder"></div><div class="quick-placeholder"></div>
+    <section class="kpi-panel">
+      <article class="kpi violet"><span class="round-icon">▦</span><div><b>Dia de Zafra</b><strong>111</strong></div></article>
+      <article class="kpi orange"><span class="round-icon">⚙</span><div><b>Produccion Liberada</b><strong>2.548,395</strong></div></article>
+      <article class="kpi pink"><span class="round-icon">♧</span><div><b>Melaza Acumulada</b><strong>1.096,528</strong></div></article>
     </section>
 
-    <section class="home-grid">
-      <article class="apex-panel exchange-panel">
-        <header class="panel-title"><span>▣</span> Cambios</header>
-        <div class="panel-body exchange-grid">
-          <section class="currency-card">
-            <div class="currency-head"><span class="flag">🇦🇷</span><strong>PESO<br>ARGENTINO</strong></div>
-            <p><b>Compra:</b> 4,2<br><b>Venta:</b> 4,6</p>
-            <p class="date">11/05/2026</p>
-            <button>Ver</button>
-            <a href="#">VALORES SET:</a>
-            <p><b>Compra:</b> 8,52<br><b>Venta:</b> 8,54</p>
-            <p class="date">15/04/2024</p>
-            <button>Ver</button>
-          </section>
-
-          <section class="currency-card">
-            <div class="currency-head"><span class="flag">🇺🇸</span><strong>DOLARES</strong></div>
-            <p><b>Compra:</b> 6100<br><b>Venta:</b> 6180</p>
-            <p class="date">11/05/2026</p>
-            <button>Ver</button>
-            <a href="#">VALORES SET:</a>
-            <p><b>Compra:</b> 7397,33<br><b>Venta:</b> 7412,35</p>
-            <p class="date">15/04/2024</p>
-            <button>Ver</button>
-          </section>
+    <section class="main-grid">
+      <article class="box exchange-box">
+        <header class="box-title">◉&nbsp; <strong>Cambios</strong></header>
+        <div class="exchange-grid">
+          <div class="currency-card">
+            <div class="currency-head"><div class="flag argentina"><span></span><span>☀</span><span></span></div><span class="badge">PESO ARGENTINO</span></div>
+            <div class="currency-body"><p><b>Compra:</b> 4,2 <b>Venta:</b> 4,6</p><p>11/05/2026</p><button>Ver</button><p><u><b>VALORES SET:</b></u></p><p><b>Compra:</b> 8,52 <b>Venta:</b> 8,54</p><p>15/04/2024</p><button>Ver</button></div>
+          </div>
+          <div class="currency-card">
+            <div class="currency-head"><div class="flag usa">🇺🇸</div><span class="badge">DOLARES</span></div>
+            <div class="currency-body"><p><b>Compra:</b> 6100 <b>Venta:</b> 6180</p><p>11/05/2026</p><button>Ver</button><p><u><b>VALORES SET:</b></u></p><p><b>Compra:</b> 7397,33 <b>Venta:</b> 7412,35</p><p>15/04/2024</p><button>Ver</button></div>
+          </div>
+          <div class="currency-card">
+            <div class="currency-head"><div class="flag euro">🇪🇺</div><span class="badge">EURO</span></div>
+            <div class="currency-body"><p><b>Compra:</b> 7250 <b>Venta:</b> 7600</p><p>11/05/2026</p><button>Ver</button><p><u><b>VALORES SET:</b></u></p><p><b>Compra:</b> 7873,72 <b>Venta:</b> 7889,7</p><p>15/04/2024</p><button>Ver</button></div>
+          </div>
+          <div class="currency-card">
+            <div class="currency-head"><div class="flag brazil">🇧🇷</div><span class="badge">REALES</span></div>
+            <div class="currency-body"><p><b>Compra:</b> 1190 <b>Venta:</b> 1250</p><p>11/05/2026</p><button>Ver</button><p><u><b>VALORES SET:</b></u></p><p><b>Compra:</b> 1427,37 <b>Venta:</b><br>1430,46</p><p>15/04/2024</p><button>Ver</button></div>
+          </div>
         </div>
       </article>
 
-      <article class="apex-panel calendar-panel">
-        <header class="panel-title">Calendario</header>
-        <div class="panel-body">
-          <div class="calendar-toolbar">
-            <div class="calendar-buttons"><button>‹</button><button>›</button><button class="today">Hoy</button></div>
-            <div class="month-title">septiembre<br>de 2026</div>
-            <div class="view-buttons"><button>Mes</button><button>Agenda</button></div>
-          </div>
-          <div class="calendar-grid">
-            <div class="dow">lun</div><div class="dow">mar</div><div class="dow">mié</div><div class="dow">jue</div><div class="dow">vie</div><div class="dow">sáb</div><div class="dow">dom</div>
-            <div class="muted">31</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
-            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
-            <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
-            <div>21</div><div>22</div><div class="event-day">23<span class="calendar-event">Auditoría China</span></div><div>24</div><div>25</div><div>26</div><div>27</div>
-            <div>28</div><div>29</div><div>30</div><div class="muted">1</div><div class="muted">2</div><div class="muted">3</div><div class="muted">4</div>
-          </div>
+      <article class="box calendar-box">
+        <header class="box-title"><strong>Calendario</strong></header>
+        <div class="calendar-toolbar">
+          <div><button>‹</button><button>›</button><button class="today">Hoy</button></div>
+          <h2>septiembre de 2026</h2>
+          <div><button class="inactive">Mes</button><button>Agenda</button></div>
+        </div>
+        <div class="calendar">
+          <div class="dow">lun</div><div class="dow">mar</div><div class="dow">mié</div><div class="dow">jue</div><div class="dow">vie</div><div class="dow">sáb</div><div class="dow">dom</div>
+          <div class="day muted">31</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div>
+          <div class="day alt">7</div><div class="day alt">8</div><div class="day alt">9</div><div class="day alt">10</div><div class="day alt">11</div><div class="day alt">12</div><div class="day alt">13</div>
+          <div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div>
+          <div class="day alt">21</div><div class="day alt">22</div><div class="day alt selected">23<span class="event">Auditoría China</span></div><div class="day alt event-span">24</div><div class="day alt event-span">25</div><div class="day alt">26</div><div class="day alt">27</div>
+          <div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day muted">1</div><div class="day muted">2</div><div class="day muted">3</div><div class="day muted">4</div>
         </div>
       </article>
     </section>
 
-    <p class="study-note">Réplica educativa basada únicamente en elementos visibles de la interfaz. No está conectada al sistema real ni a sus datos.</p>
+    <footer>Versión 16.4.2024</footer>
   </main>
 
-  <button class="logout-fab" id="logout-button" title="Cerrar sesión de demostración">Salir</button>
   <script src="dashboard.js"></script>
 </body>
 </html>
