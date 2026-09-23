@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema Inventiva - Demo</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-button" id="menu-button" aria-label="Abrir o cerrar menú">☰</button>
+    <div class="brand">
+      <div class="brand-mark">i</div>
+      <div>
+        <strong>Sistema Inventiva</strong>
+        <span>Réplica educativa</span>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span class="user-label" id="user-label">Usuario</span>
+      <button class="logout" id="logout-button">Salir</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <a class="active" href="#inicio">⌂ <span>Inicio</span></a>
+      <a href="#ventas">▣ <span>Ventas</span></a>
+      <a href="#compras">▤ <span>Compras</span></a>
+      <a href="#inventario">▦ <span>Inventario</span></a>
+      <a href="#clientes">♙ <span>Clientes</span></a>
+      <a href="#proveedores">♢ <span>Proveedores</span></a>
+      <a href="#reportes">▥ <span>Reportes</span></a>
+      <a href="#configuracion">⚙ <span>Configuración</span></a>
+    </nav>
+  </aside>
+
+  <main class="content" id="main-content">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">Sistema</p>
+        <h1>Inicio</h1>
+        <p>Panel de práctica inspirado en una aplicación empresarial Oracle APEX.</p>
+      </div>
+      <button class="primary-button">+ Nuevo registro</button>
+    </section>
+
+    <section class="cards">
+      <article class="metric-card">
+        <span class="metric-label">Pedidos pendientes</span>
+        <strong>12</strong>
+        <small>Datos de demostración</small>
+      </article>
+      <article class="metric-card">
+        <span class="metric-label">Productos activos</span>
+        <strong>248</strong>
+        <small>Datos de demostración</small>
+      </article>
+      <article class="metric-card">
+        <span class="metric-label">Clientes</span>
+        <strong>76</strong>
+        <small>Datos de demostración</small>
+      </article>
+      <article class="metric-card">
+        <span class="metric-label">Alertas</span>
+        <strong>3</strong>
+        <small>Datos de demostración</small>
+      </article>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <div class="panel-header">
+          <div>
+            <h2>Últimos movimientos</h2>
+            <p>Ejemplo de tabla tipo sistema administrativo.</p>
+          </div>
+          <button class="ghost-button">Ver todos</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Fecha</th><th>Documento</th><th>Descripción</th><th>Estado</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>23/09/2026</td><td>MV-1042</td><td>Entrada de mercadería</td><td><span class="status ok">Procesado</span></td></tr>
+              <tr><td>23/09/2026</td><td>PV-2188</td><td>Pedido de venta</td><td><span class="status pending">Pendiente</span></td></tr>
+              <tr><td>22/09/2026</td><td>AJ-0093</td><td>Ajuste de inventario</td><td><span class="status ok">Procesado</span></td></tr>
+              <tr><td>22/09/2026</td><td>OC-0521</td><td>Orden de compra</td><td><span class="status review">Revisión</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel shortcuts">
+        <div class="panel-header">
+          <div>
+            <h2>Accesos rápidos</h2>
+            <p>Módulos de ejemplo.</p>
+          </div>
+        </div>
+        <div class="shortcut-grid">
+          <button>▦<span>Inventario</span></button>
+          <button>▣<span>Ventas</span></button>
+          <button>▤<span>Compras</span></button>
+          <button>▥<span>Reportes</span></button>
+        </div>
+      </article>
+    </section>
+
+    <p class="study-note">Esta pantalla no pertenece al sistema real de Inventiva. Es una recreación educativa para estudiar estructura, navegación y diseño.</p>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
