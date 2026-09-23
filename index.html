@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login study replica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="logo-box" aria-hidden="true">i</div>
+      <h1 id="login-title">Sistema Inventiva</h1>
+
+      <form id="login-form" autocomplete="off">
+        <label class="sr-only" for="username">Nombre de Usuario</label>
+        <div class="field">
+          <span class="icon">♙</span>
+          <input id="username" name="username" type="text" placeholder="Nombre de Usuario" />
+        </div>
+
+        <label class="sr-only" for="password">Contraseña</label>
+        <div class="field password-field">
+          <span class="icon">⌁</span>
+          <input id="password" name="password" type="password" placeholder="Contraseña" />
+          <button class="eye" type="button" id="toggle-password" aria-label="Mostrar u ocultar contraseña">◉</button>
+        </div>
+
+        <label class="remember">
+          <input id="remember" type="checkbox" checked />
+          <span>Recordar nombre de usuario</span>
+        </label>
+
+        <button class="submit" type="submit">Conectar</button>
+      </form>
+      <p id="demo-message" class="demo-message" hidden>Replica educativa: no realiza autenticación real.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
